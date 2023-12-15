@@ -7,6 +7,7 @@ export default {
   },
   colors: {
     midnight: "#011635",
+    'customblue': "#5889db",
   },
   plugins: [],
 };
