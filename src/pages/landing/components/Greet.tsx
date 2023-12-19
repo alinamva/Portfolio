@@ -1,9 +1,10 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Button } from "@mui/material";
+import { Link } from "react-scroll";
 const Greet = () => {
   return (
-    <div className="flex justify-center flex-col w-1/2 text-center gap-6">
+    <div className="flex justify-center flex-col w-1/2 text-center gap-6 ">
       <h1>Hi, I'm Alina Mammadova.</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur
@@ -21,7 +22,13 @@ const Greet = () => {
       <div className="flex gap-6 justify-center items-center">
         <LinkedInIcon />
         <GitHubIcon />
-        <Button variant="outlined">Get in touch</Button>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={700}
+        >
+          <Button variant="outlined">Get in touch</Button>
+        </Link>
       </div>
     </div>
   );
