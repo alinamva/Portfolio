@@ -4,9 +4,9 @@ import { Button } from "@mui/material";
 import { Link } from "react-scroll";
 const Greet = () => {
   return (
-    <div className="flex justify-center flex-col w-1/2 text-center gap-6 ">
+    <div className="flex justify-center flex-col w-1/2 min-h-lvh text-center gap-6 ">
       <h1>Hi, I'm Alina Mammadova.</h1>
-      <p>
+      <article>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur
         porta rutrum. Vivamus dignissim dui sit amet augue egestas luctus.
         Mauris sollicitudin ipsum eu ipsum tempus convallis. Vestibulum ante
@@ -18,7 +18,7 @@ const Greet = () => {
         sodales felis sit amet tincidunt vehicula. Interdum et malesuada fames
         ac ante ipsum primis in faucibus. Sed sit amet elit et massa eleifend
         vehicula. Curabitur finibus odio quis lacus pulvinar hendrerit.
-      </p>
+      </article>
       <div className="flex gap-6 justify-center items-center">
         <LinkedInIcon />
         <GitHubIcon />

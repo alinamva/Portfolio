@@ -1,6 +1,7 @@
 import { FormEvent, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { Button } from "@mui/material";
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -83,13 +84,12 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="flex items-center justify-between">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button"
-            onClick={sendEmail}
+          <Button
+            variant="contained"
+            size="large"
           >
             Send
-          </button>
+          </Button>
         </div>
       </form>
     </div>

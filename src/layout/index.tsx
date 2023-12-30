@@ -24,6 +24,7 @@ const Main = () => {
     setChecked(!checked);
     setTheme(theme === "dark" ? "light" : "dark");
   };
+
   return (
     <div className="min-h-screen dark:bg-slate-950  ">
       <Header

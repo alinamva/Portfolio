@@ -1,16 +1,28 @@
+import { useRef } from "react";
 import { Data } from "../../../constants";
 // import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="p-48 flex flex-col gap-12 ">
+    <div className="px-48 py-12 flex flex-col gap-12 ">
       <h2 className="bg-gradient-to-r from-[#5889db] text-center via-[#5889db] font-bold to-black text-transparent bg-clip-text">
         Projects
       </h2>
       <div className="grid grid-cols-2 gap-12">
         {Data.map((p, index) => {
+          const ref = useRef(null);
+          const isInView = useInView(ref);
           return (
-            <div
+            <motion.div
+              // initial={{ opacity: 0.5, scale: 0.95 }}
+              transition={{ duration: 0.5 }}
+              // whileInView={{ opacity: 1, scale: 1 }}
+              animate={{
+                opacity: isInView ? 1 : 0.5,
+                scale: isInView ? 1 : 0.95,
+              }}
               key={index}
+              ref={ref}
               className="w-full shadow-2xl rounded-xl py-4 border "
             >
               {/* <Link to={p.link}> */}
@@ -35,7 +47,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>
