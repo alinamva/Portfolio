@@ -86,6 +86,7 @@ const Contact = () => {
         <div className="flex items-center justify-between">
           <Button
             variant="contained"
+            onClick={sendEmail}
             size="large"
           >
             Send
