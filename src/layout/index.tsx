@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import Landing from "../pages/landing";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { Element } from "react-scroll";
+import { Outlet } from "react-router-dom";
 export interface Main {
   checked: boolean;
   handleThemeSwitch: () => void;
@@ -26,15 +24,13 @@ const Main = () => {
   };
 
   return (
-    <div className="min-h-screen dark:bg-slate-950  ">
-      <Header
-        handleThemeSwitch={handleThemeSwitch}
-        checked={checked}
-      />
-      <Landing />
-      <Element name="contact">
+    <div className='h-screen dark:bg-slate-950  '>
+      <Header handleThemeSwitch={handleThemeSwitch} checked={checked} />
+      <Outlet />
+      {/* <Landing /> */}
+      {/* <Element name='contact'>
         <Footer />
-      </Element>
+      </Element> */}
     </div>
   );
 };

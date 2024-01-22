@@ -1,20 +1,33 @@
 import Main from "./layout";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { motion, useScroll } from "framer-motion";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Projects from "./pages/projects/Projects";
+import Landing from "./pages/landing";
+import Contact from "./pages/contact/Contact";
 
 function App() {
-  const { scrollYProgress } = useScroll();
-  return (
-    <>
-      <motion.div
-        style={{ scaleX: scrollYProgress }}
-        className="w-full bg-[#5889db] h-2 fixed top-0 left-0 right-0 origin-[0%]"
-      ></motion.div>
-      <Main />
-      <ToastContainer />
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main />,
+      children: [
+        {
+          index: true,
+          path: "/",
+          element: <Landing />,
+        },
+        {
+          path: "/projects",
+          element: <Projects />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -5,7 +5,7 @@ import logodark from "../assets/logodark.svg";
 import { Main } from "../layout";
 const Header = ({ handleThemeSwitch, checked }: Main) => {
   return (
-    <div className="py-12 px-24 flex justify-between items-center bg-midnight">
+    <div className="pt-12 px-24 flex justify-between items-center bg-midnight">
       <img
         src={checked ? logodark : logo}
         alt="Logo"
