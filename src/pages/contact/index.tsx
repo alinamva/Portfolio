@@ -1,6 +1,6 @@
 import { FormEvent, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { Button } from "@mui/material";
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -23,7 +23,8 @@ const Contact = () => {
     }
   };
   return (
-    <div className='flex justify-center w-full pt-6'>
+    <div className='flex justify-center w-full p-6'>
+      <ToastContainer />
       <form className='w-1/2' ref={form} onSubmit={sendEmail}>
         <div className='mb-4'>
           <label className='block mb-2 font-bold text-gray-700 dark:text-gray-300 text-md'>Name</label>
