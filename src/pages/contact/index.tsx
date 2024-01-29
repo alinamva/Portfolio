@@ -23,12 +23,12 @@ const Contact = () => {
     }
   };
   return (
-    <div className='w-full p-12 flex justify-center'>
+    <div className='flex justify-center w-full pt-6'>
       <form className='w-1/2' ref={form} onSubmit={sendEmail}>
         <div className='mb-4'>
-          <label className='block text-gray-700 dark:text-gray-300 text-md font-bold mb-2'>Name</label>
+          <label className='block mb-2 font-bold text-gray-700 dark:text-gray-300 text-md'>Name</label>
           <input
-            className='shadow appearance-none bg-transparent border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 leading-tight focus:outline-none focus:shadow-outline'
+            className='w-full px-3 py-2 leading-tight text-gray-700 bg-transparent border rounded shadow appearance-none dark:text-gray-300 focus:outline-none focus:shadow-outline'
             id='username'
             type='text'
             name='user_name'
@@ -36,19 +36,19 @@ const Contact = () => {
           />
         </div>
         <div className='mb-4'>
-          <label className='block text-gray-700 dark:text-gray-300 text-md font-bold mb-2'>Title</label>
+          <label className='block mb-2 font-bold text-gray-700 dark:text-gray-300 text-md'>Title</label>
           <input
             name='title'
-            className='shadow appearance-none border bg-transparent  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 mb-3 leading-tight focus:outline-none focus:shadow-outline'
+            className='w-full px-3 py-2 mb-3 leading-tight text-gray-700 bg-transparent border rounded shadow appearance-none dark:text-gray-300 focus:outline-none focus:shadow-outline'
             id='title'
             type='text'
             placeholder='Title'
           />
         </div>
         <div className='mb-4'>
-          <label className='block text-gray-700 dark:text-gray-300 text-md font-bold mb-2'>Email Address</label>
+          <label className='block mb-2 font-bold text-gray-700 dark:text-gray-300 text-md'>Email Address</label>
           <input
-            className='shadow appearance-none border bg-transparent  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 mb-3 leading-tight focus:outline-none focus:shadow-outline'
+            className='w-full px-3 py-2 mb-3 leading-tight text-gray-700 bg-transparent border rounded shadow appearance-none dark:text-gray-300 focus:outline-none focus:shadow-outline'
             id='title'
             type='text'
             name='user_email'
@@ -56,9 +56,9 @@ const Contact = () => {
           />
         </div>
         <div className='mb-4'>
-          <label className='block text-gray-700 dark:text-gray-300 text-md font-bold mb-2'>Your message</label>
+          <label className='block mb-2 font-bold text-gray-700 dark:text-gray-300 text-md'>Your message</label>
           <textarea
-            className='shadow appearance-none bg-transparent border h-40 rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 mb-3 leading-tight focus:outline-none focus:shadow-outline'
+            className='w-full h-40 px-3 py-2 mb-3 leading-tight text-gray-700 bg-transparent border rounded shadow appearance-none dark:text-gray-300 focus:outline-none focus:shadow-outline'
             id='title'
             placeholder='Your message'
             name='message'

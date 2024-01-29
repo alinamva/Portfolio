@@ -1,9 +1,9 @@
 import Main from "./layout";
 import "react-toastify/dist/ReactToastify.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Projects from "./pages/projects/Projects";
+import Projects from "./pages/projects";
 import Landing from "./pages/landing";
-import Contact from "./pages/contact/Contact";
+import Contact from "./pages/contact/index";
 
 function App() {
   const router = createBrowserRouter([

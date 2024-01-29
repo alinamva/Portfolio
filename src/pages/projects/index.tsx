@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Data } from "../../constants";
 import { motion, useInView, useScroll } from "framer-motion";
+import { Link } from "react-router-dom";
 const Projects = () => {
   const { scrollYProgress } = useScroll();
 
@@ -8,9 +9,9 @@ const Projects = () => {
     <>
       <motion.div
         style={{ scaleX: scrollYProgress }}
-        className='w-full bg-[#5889db] h-2 fixed top-0 left-0 right-0 origin-[0%]'
+        className='w-full  h-2 fixed top-0  bg-[#5889db]  left-0 right-0 origin-[0%]'
       ></motion.div>
-      <div className='px-48 py-12 flex flex-col gap-12 '>
+      <div className='flex flex-col gap-12 px-48 py-12 '>
         <h2 className='bg-gradient-to-r from-[#5889db] text-center via-[#5889db] font-bold to-black text-transparent bg-clip-text'>
           Projects
         </h2>
@@ -27,12 +28,14 @@ const Projects = () => {
                 }}
                 key={index}
                 ref={ref}
-                className='w-full shadow-2xl rounded-xl py-4 border '
+                className='w-full py-4 border shadow-2xl dark:shadow-3xl rounded-xl '
               >
-                <div className='w-full px-8 py-4'>
-                  <img src={p.image} className='cursor-pointer hover:scale-105 duration-200 shadow-xl' />
-                </div>
-                <div className='px-8 py-2 gap-4 flex flex-col'>
+                <Link to={p.link} target='_blank' rel='noopener noreferrer'>
+                  <div className='w-full px-8 py-4'>
+                    <img src={p.image} className='duration-200 shadow-xl cursor-pointer hover:scale-105' />
+                  </div>
+                </Link>
+                <div className='flex flex-col gap-4 px-8 py-2'>
                   <h3>{p.title}</h3>
                   <p>{p.description}</p>
                   <div className='flex gap-3'>

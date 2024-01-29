@@ -24,13 +24,9 @@ const Main = () => {
   };
 
   return (
-    <div className='h-screen dark:bg-slate-950  '>
+    <div className='min-h-screen text-black dark:bg-slate-950 dark:text-white'>
       <Header handleThemeSwitch={handleThemeSwitch} checked={checked} />
       <Outlet />
-      {/* <Landing /> */}
-      {/* <Element name='contact'>
-        <Footer />
-      </Element> */}
     </div>
   );
 };
