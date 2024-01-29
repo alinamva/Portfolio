@@ -4,6 +4,7 @@
 :root {
   font-family: "Montserrat";
   line-height: 1.5;
+
   font-weight: 400;
 
   font-synthesis: none;
@@ -30,8 +31,57 @@ h1 {
   font-size: 1.2em;
   line-height: 1.1;
 }
+h1 span {
+  color: #d1d1d1;
+  font-weight: 600;
+  position: relative;
+  white-space: nowrap;
+}
+.custom-heading1 {
+  --i: 0;
+  animation: displayText 6s infinite;
+  animation-delay: calc(-3s * var(--i));
+}
+.custom-heading2 {
+  --i: 1;
+  animation: displayText 6s infinite;
+  animation-delay: calc(-3s * var(--i));
+}
+@keyframes displayText {
+  0% {
+    display: inline-block;
+  }
+  50%,
+  100% {
+    display: none;
+  }
+}
+
+h1 span::before {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  color: #5889db;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-right: 2px solid #5889db;
+  filter: drop-shadow(0 0 5px #5889db) drop-shadow(0 0 25px #5889db);
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
 h2 {
   font-size: 3rem;
+  font-family: "Noto Serif Display";
 }
 h3 {
   font-size: 1.3rem;

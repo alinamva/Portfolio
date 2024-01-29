@@ -12,7 +12,7 @@ const Projects = () => {
         className='w-full  h-2 fixed top-0  bg-[#5889db]  left-0 right-0 origin-[0%]'
       ></motion.div>
       <div className='flex flex-col gap-12 px-48 py-12 '>
-        <h2 className='bg-gradient-to-r from-[#5889db] text-center via-[#5889db] font-bold to-black text-transparent bg-clip-text'>
+        <h2 className='bg-gradient-to-r from-[#5889db] text-center via-[#5889db] font-semibold to-black text-transparent bg-clip-text'>
           Projects
         </h2>
         <div className='grid grid-cols-2 gap-12'>
