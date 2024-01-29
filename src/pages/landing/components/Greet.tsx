@@ -10,8 +10,8 @@ const Greet = () => {
         <span className='custom-heading1 dark:text-gray-700' data-text='ALINA MAMMADOVA'>
           ALINA MAMMADOVA
         </span>
-        <span className='custom-heading2 dark:text-gray-700' data-text='FRONTEND'>
-          FRONTEND
+        <span className='custom-heading2 dark:text-gray-700' data-text='FRONTEND DEVELOPER'>
+          FRONTEND DEVELOPER
         </span>
       </h1>
 
