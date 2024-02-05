@@ -4,34 +4,40 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 const Greet = () => {
   return (
-    <div className='flex flex-col justify-center w-1/3 h-full gap-6 '>
+    <div className="flex flex-col justify-center w-1/3 h-full gap-6 ">
       <h1>
         I'm&nbsp;
-        <span className='custom-heading1 dark:text-gray-700' data-text='ALINA MAMMADOVA'>
+        <span
+          className="custom-heading1 dark:text-gray-700"
+          data-text="ALINA MAMMADOVA"
+        >
           ALINA MAMMADOVA
         </span>
-        <span className='custom-heading2 dark:text-gray-700' data-text='FRONTEND DEVELOPER'>
+        <span
+          className="custom-heading2 dark:text-gray-700"
+          data-text="FRONTEND DEVELOPER"
+        >
           FRONTEND DEVELOPER
         </span>
       </h1>
 
       <article>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur porta rutrum. Vivamus dignissim dui sit
-        amet augue egestas luctus.
+        I have nearly 1.5 year experience in this field. I have willing with
+        learning new technologies not only related with frontend but also
+        another IT technologies which are up to date.
         <br />
-        <br />
-        ac ante ipsum primis in faucibus. Sed sit amet elit et massa eleifend vehicula. Curabitur finibus odio quis
-        lacus pulvinar hendrerit.
+        <br />I personally believe that I'm able to make a strong communication
+        with any team. I can prove myself by my learning speed.
       </article>
-      <div className='flex items-center justify-center gap-6'>
-        <Link to='https://www.linkedin.com/in/alinamamedova/'>
+      <div className="flex items-center justify-center gap-6">
+        <Link to="https://www.linkedin.com/in/alinamamedova/">
           <LinkedInIcon />
         </Link>
-        <Link to='https://github.com/alinamva'>
+        <Link to="https://github.com/alinamva">
           <GitHubIcon />
         </Link>
-        <Link to='/contact'>
-          <Button variant='outlined'>Get in touch</Button>
+        <Link to="/contact">
+          <Button variant="outlined">Get in touch</Button>
         </Link>
       </div>
     </div>
