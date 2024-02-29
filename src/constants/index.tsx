@@ -7,6 +7,7 @@ import techyes from "/assets/techyes.png";
 import rickandmorty from "/assets/rickandmorty.png";
 import gameapp from "/assets/gameapp.png";
 import framermotion from "/assets/framermotion.png";
+import tictactoe from "/assets/tictactoe.png";
 
 import React from "../../public/assets/reacticon.svg?react";
 import JS from "../../public/assets/js.svg?react";
@@ -14,6 +15,19 @@ import TS from "../../public/assets/ts.svg?react";
 import Tailwind from "../../public/assets/tailwind.svg?react";
 
 export const Data = [
+  {
+    id: 9,
+    title: "Tic Tac Toe",
+    image: tictactoe,
+    lgs: [
+      <React className="w-10 h-10 dark:fill-white fill-black" />,
+      <TS className="w-10 h-10 dark:fill-white fill-black" />,
+      <Tailwind className="w-10 h-10 dark:fill-white fill-black" />,
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    link: "https://tic-tac-toe-one-eta.vercel.app/",
+  },
   {
     id: 8,
     title: "Game App",
