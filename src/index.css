@@ -20,11 +20,18 @@ ul {
 label {
   cursor: pointer;
 }
+
 ul div {
   font-size: 7.5rem;
   height: 110px;
   font-weight: 300;
   font-family: "Noto Serif Display";
+}
+@media (max-width: 1200px) {
+  ul div {
+    font-size: 5rem;
+    height: 90px;
+  }
 }
 
 h1 {

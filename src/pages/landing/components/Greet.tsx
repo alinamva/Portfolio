@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 const Greet = () => {
   return (
-    <div className="flex flex-col justify-center w-1/3 h-full gap-6 ">
+    <div className="flex flex-col w-full lg:text-lg md:text-md justify-center lg:max-w-[400px] h-full gap-6 ">
       <h1>
         I'm&nbsp;
         <span

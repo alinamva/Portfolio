@@ -9,6 +9,11 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+      textColor: ["hover"],
+    },
+  },
   colors: {
     midnight: "#011635",
     customblue: "#5889db",

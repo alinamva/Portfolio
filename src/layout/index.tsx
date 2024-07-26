@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
 export interface Main {
   checked: boolean;
   handleThemeSwitch: () => void;
@@ -24,8 +24,11 @@ const Main = () => {
   };
 
   return (
-    <div className='min-h-screen text-black dark:bg-slate-950 dark:text-white'>
-      <Header handleThemeSwitch={handleThemeSwitch} checked={checked} />
+    <div className="flex flex-col min-h-screen gap-12 m-auto text-black md:gap-24 lg:gap-20 max-w-7xl dark:bg-slate-950 dark:text-white">
+      <Header
+        handleThemeSwitch={handleThemeSwitch}
+        checked={checked}
+      />
       <Outlet />
     </div>
   );

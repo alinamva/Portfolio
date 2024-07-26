@@ -11,11 +11,11 @@ const Projects = () => {
         style={{ scaleX: scrollYProgress }}
         className="w-full  h-2 fixed top-0  bg-[#5889db]  left-0 right-0 origin-[0%]"
       ></motion.div>
-      <div className="flex flex-col gap-12 px-48 py-12 ">
+      <div className="flex flex-col gap-12 px-6 sm:px-24 lg:px-48">
         <h2 className="bg-gradient-to-r from-[#5889db] text-center via-[#5889db] font-semibold to-black text-transparent bg-clip-text">
           Projects
         </h2>
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           {Data.map((p, index) => {
             const ref = useRef(null);
             const isInView = useInView(ref);
